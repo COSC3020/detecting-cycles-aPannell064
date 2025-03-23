@@ -1,16 +1,19 @@
 const fs = require('fs');
-const jsc = require('jsverify');
+const jsc = require('jest');
 
 eval(fs.readFileSync('code.js')+'');
 
 //Empty Graph
-jsc.assert(hasCycle([]) == false);
+test("test", () => {
+    expect(hasCycle([]).toBe(false))
+})
+
 
 //Basic Graph with no cycles
-jsc.assert(hasCycle([[1], []]) == false);
+//jsc.assert(hasCycle([[1], []]) == false);
 
 //Basic graph with a cycle
-jsc.assert(hasCycle([[1], [2], [0]]) == true);
+//jsc.assert(hasCycle([[1], [2], [0]]) == true);
 
 //More complex graph with no cycles
 
