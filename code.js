@@ -5,7 +5,7 @@ function hasCycle(graph) {
     //Try every start position
     for(var i = 0; i < graph.length; i++) {
         current = i;
-        copy = JSON.parse(JSON.stringify(original));
+        copy = JSON.parse(JSON.stringify(graph));
         toVisit = [...copy[current]];
         copy[current] = []
 
@@ -22,5 +22,3 @@ function hasCycle(graph) {
     }  
     return false;
 }
-
-console.log(hasCycle([[]]))
