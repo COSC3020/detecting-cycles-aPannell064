@@ -1,10 +1,10 @@
 const fs = require('fs');
-const jsc = require('jest');
+const jsc = require('test');
 
 eval(fs.readFileSync('code.js')+'');
 
 //Empty Graph
-test("test", () => {
+jsc.test("test", () => {
     expect(hasCycle([]).toBe(false))
 })
 
