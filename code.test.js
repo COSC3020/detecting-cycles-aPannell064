@@ -4,9 +4,7 @@ const jsc = require('test');
 eval(fs.readFileSync('code.js')+'');
 
 //Empty Graph
-jsc.test("test", () => {
-    expect(hasCycle([]).toBe(false))
-})
+assert.strictEqual(hasCycle([]), false, "Empty graph should not have cycles");
 
 
 //Basic Graph with no cycles
