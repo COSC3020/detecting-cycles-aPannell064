@@ -19,4 +19,4 @@ assert.strictEqual(hasCycle([[1,3,5], [4], [3,5], [4], [], [6], []]), false, "Th
 assert.strictEqual(hasCycle([[1,2,5], [4], [3,5], [4], [6], [6], [1]]), true, "This graph should have a cycle");
 
 //More complex undirected graph
-assert.strictEqual(hasCycle([[1,2,5], [0,4], [0,3,5], [2,4], [1,3], [0,2,6], [5]]), true, "This graph should have a cycke");
+assert.strictEqual(hasCycle([[1,2,5], [0,4], [0,3,5], [2,4], [1,3], [0,2,6], [5]]), true, "This graph should have a cycle");
