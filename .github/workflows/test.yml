@@ -6,6 +6,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - run: npm i jest
-    - run: npm test
+      - uses: actions/checkout@v3
+      - run: node code.test.js
