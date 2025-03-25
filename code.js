@@ -10,14 +10,12 @@ function hasCycle(graph) {
 function dfTraversal(graph, visited, startNode) {  
     if (visited[startNode]) {return true;}
     visited[startNode] = true;
-    console.log(visited)
+    //Check each edge with a depth-first traversal
     var toCheck = [...graph[startNode]];
-    
     while(toCheck.length) { 
-        if(dfSearch(graph, visited, toCheck.shift())) {return true;}
+        if(dfTraversal(graph, visited, toCheck.shift())) {return true;}
     }
+    //Reset the visited for that node if the stack resolves
     visited[startNode] = false;
     return false;
 }
-
-console.log(hasCycle([[1,2,5], [4], [3,5], [4], [], [6], []]));
