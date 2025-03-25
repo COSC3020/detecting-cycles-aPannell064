@@ -23,17 +23,18 @@ function hasCycle1(graph) {
 }
 
 function hasCycle(graph) {
-    var visited = new Array(graph.length);
+    var visited = new Array(graph.length).fill(false)
     for (var startNode = 0; startNode < graph.length; startNode++) {
-        visited.fill(false);
         if(dfSearch(graph, visited, startNode)) {return true;}
     }
     return false;  
 }
 
 function dfSearch(graph, visited, startNode) {
+    
     if (visited[startNode]) {return true;}
     visited[startNode] = true;
+    console.log(visited)
     var toCheck = [...graph[startNode]];
 
     while(toCheck.length) { 
@@ -41,7 +42,8 @@ function dfSearch(graph, visited, startNode) {
             return true;
         }   
     }
+    visited[startNode] = false;
     return false;
 }
 
-console.log(hasCycle([[], [0]]))
+console.log(hasCycle([[1,2,5], [4], [3,5], [4], [], [6], []]));
