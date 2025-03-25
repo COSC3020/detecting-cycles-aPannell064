@@ -3,7 +3,7 @@ function hasCycle(graph) {
     //Array for all nodes that have been fully processed
     var processed = new Array(graph.length).fill(false);
     //Array for all nodes that are visited in each recurrsion stack
-    var visited = [...processed]
+    var visited = [...processed];
     
     //Try each node as a start becasue some parts might not be connected
     for (var startNode = 0; startNode < graph.length; startNode++) {
