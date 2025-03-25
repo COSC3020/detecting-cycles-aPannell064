@@ -15,3 +15,7 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+https://medium.com/@programinbasic/how-to-copy-clone-an-array-in-javascript-2eb2011451b
+
+https://www.w3schools.com/nodejs/met_assert.asp
