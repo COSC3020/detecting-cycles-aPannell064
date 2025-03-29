@@ -32,7 +32,7 @@ vertex. For each vertex, it will recursively process each of its outgoing edges.
 vertex only has to be processed once, each of its edges also only have to be processed once in
 the worst case. Therefore, the asymptotic complexity is $\Theta(|V| + |E|)$. 
 
-$$ Additional Help
+## Additional Help
 
 I had to use https://medium.com/@programinbasic/how-to-copy-clone-an-array-in-javascript-2eb2011451b
 to figure out how to properly copy an array because I had some problems with how arrays are handled 
