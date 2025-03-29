@@ -36,7 +36,7 @@ the worst case. Therefore, the asymptotic complexity is $\Theta(|V| + |E|)$.
 
 I had to use https://medium.com/@programinbasic/how-to-copy-clone-an-array-in-javascript-2eb2011451b
 to figure out how to properly copy an array because I had some problems with how arrays are handled 
-in JavaScript/
+in JavaScript.
 
 I also used https://www.w3schools.com/nodejs/met_assert.asp to help me with the test code as 
 this is the first exercise that I have actually written the tests for. I looked at the workflows
